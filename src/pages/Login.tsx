@@ -34,34 +34,36 @@ const Login: React.FC = () => {
 
   return (
     <div className="login-page">
-      <h2>Login In</h2>
-      <form autoComplete="off" onSubmit={handleLoginSubmit}>
-        <div className="form-group">
-          <input
-            type="email"
-            className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-            value={emailInput}
-            onChange={handleEmailChange}
-          />
-        </div>
-        <div className="form-group">
-          <input
-            type="password"
-            autoComplete="new-password"
-            className="form-control"
-            id="exampleInputPassword1"
-            placeholder="Password"
-            value={passwordInput}
-            onChange={handlePasswordChange}
-          />
-        </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
-      </form>
+      <div className="login-container">
+        <h2>Login</h2>
+        <form autoComplete="off" onSubmit={handleLoginSubmit}>
+          <div className="form-group">
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Email address"
+              value={emailInput}
+              onChange={handleEmailChange}
+            />
+          </div>
+          <div className="form-group">
+            <input
+              type="password"
+              autoComplete="new-password"
+              className="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+              value={passwordInput}
+              onChange={handlePasswordChange}
+            />
+          </div>
+          <button type="submit" className="btn btn-primary">
+            Login
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,82 @@
+/* Shorter result input for TicketAddress */
+/* Result input for TicketAddress, styled like ticket-form-input but longer */
+.result-input {
+  width: 380px !important;
+  max-width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+.result-input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+ .ticket-form-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.ticket-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+.ticket-form-input {
+  width: 320px;
+  max-width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+.ticket-form-input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+.ticket-form-btn {
+  width: 150px;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #1976d2 60%, #2196f3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+.ticket-form-btn:hover {
+  background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.12);
+}
+.ticket-form-group.ticket-form-inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.ticket-form-container label {
+  font-weight: bold;
+  text-align: left;
+}
+.ticket-form-btn:disabled {
+  background: #90caf9;
+  cursor: not-allowed;
+}
+.ticket-form-error {
+  color: #d32f2f;
+  font-size: 14px;
+  min-height: 18px;
+}
